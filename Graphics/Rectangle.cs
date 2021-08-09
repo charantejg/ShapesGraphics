@@ -62,14 +62,16 @@ namespace Graphics
                (topX.y == positiveDelta.y || topY.y == positiveDelta.y
                 || topX.y == userInput.y || topY.y == userInput.y
                 || topX.y == negativeDelta.y || topY.y == negativeDelta.y))
+
                ||
-               (bottomX.x == positiveDelta.x || bottomY.x == positiveDelta.x
+
+               ((bottomX.x == positiveDelta.x || bottomY.x == positiveDelta.x
                || bottomX.x == userInput.x || bottomY.x == userInput.x
                || bottomX.x == negativeDelta.x || bottomY.x == negativeDelta.x)
                  &&
                (bottomX.y == positiveDelta.y || bottomY.y == positiveDelta.y
                || bottomX.y == userInput.y || bottomY.y == userInput.y
-               || bottomX.y == negativeDelta.y || bottomY.y == negativeDelta.y))
+               || bottomX.y == negativeDelta.y || bottomY.y == negativeDelta.y)) )
             {
                 Console.WriteLine("Edges are selected with  delta");
                 
