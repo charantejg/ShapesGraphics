@@ -76,18 +76,6 @@ namespace Graphics
                 return;
             }
 
-            //if (
-            //   ((topX.x == negativeDelta.x || topY.x == negativeDelta.x)
-            //   &&
-            //   (topX.y == negativeDelta.y || topY.y == negativeDelta.y))
-            //   ||
-            //   (bottomX.x == negativeDelta.x || bottomY.x == negativeDelta.x)
-            //     &&
-            //   (bottomX.y == negativeDelta.y || bottomY.y == negativeDelta.y))
-            //{
-            //    Console.WriteLine("Edges are selected with negative delta");
-            //    return;
-            //}
 
 
         }
