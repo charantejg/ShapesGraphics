@@ -17,12 +17,12 @@ namespace Graphics
 
         public override void Draw()
         {
-            topY.x = topX.x + length;
+            topY.x = topX.x + width;
             topY.y = topX.y;
             bottomX.x = topX.x;
-            bottomX.y = topX.y + width;
-            bottomY.x = topY.x + length;
-            bottomY.y = topY.x + width;
+            bottomX.y = topX.y + length;
+            bottomY.x = topY.x + width;
+            bottomY.y = topY.x + length;
 
             Console.WriteLine("Top X:  ("+topX.x +", "+topX.y +")" +
                 "Top Y: (" + topY.x + "," + topY.y + "), " +
