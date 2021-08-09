@@ -33,16 +33,6 @@ namespace Graphics
 
         public void Select(Coordinate userInput)
         {
-            // user clicking exactly on the edges
-
-            if ((topX.x == userInput.x && topX.y == userInput.y)
-                || (topY.x == userInput.x && topY.y == userInput.y)
-                || (bottomX.x == userInput.x && bottomX.y == userInput.y)
-                || (bottomY.x == userInput.x && bottomY.y == userInput.y))
-            {
-                Console.WriteLine("Edges are selected");
-                return;
-            }
 
             // User clicking near to the edges 
             // Pre-defined delta 
@@ -54,8 +44,17 @@ namespace Graphics
             negativeDelta.x -= delta.x;
             negativeDelta.y -= delta.y;
 
+            // user clicking exactly on the edges
 
-            if (
+            if ((topX.x == userInput.x && topX.y == userInput.y)
+                || (topY.x == userInput.x && topY.y == userInput.y)
+                || (bottomX.x == userInput.x && bottomX.y == userInput.y)
+                || (bottomY.x == userInput.x && bottomY.y == userInput.y))
+            {
+                Console.WriteLine("Edges are selected");
+               
+            }
+            else if (
                ((topX.x == positiveDelta.x || topY.x == positiveDelta.x
                    || topX.x == userInput.x || topY.x == userInput.x 
                    || topX.x == negativeDelta.x || topY.x == negativeDelta.x)
@@ -73,7 +72,11 @@ namespace Graphics
                || bottomX.y == negativeDelta.y || bottomY.y == negativeDelta.y))
             {
                 Console.WriteLine("Edges are selected with  delta");
-                return;
+                
+            }
+            else
+            {
+                Console.WriteLine("Rectangle is not selected");
             }
 
 
