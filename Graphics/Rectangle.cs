@@ -21,8 +21,8 @@ namespace Graphics
             topY.y = topX.y;
             bottomX.x = topX.x;
             bottomX.y = topX.y + length;
-            bottomY.x = topY.x + width;
-            bottomY.y = topY.x + length;
+            bottomY.x = topY.x;
+            bottomY.y = bottomX.y;
 
             Console.WriteLine("Top X:  ("+topX.x +", "+topX.y +")" +
                 "Top Y: (" + topY.x + "," + topY.y + "), " +

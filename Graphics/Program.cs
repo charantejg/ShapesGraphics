@@ -14,7 +14,7 @@ namespace Graphics
             rectangle.Draw();
 
             // user selection co-ordinate this is an input 
-            var userInputCordinate = new Coordinate(11, 1);
+            var userInputCordinate = new Coordinate(13, 0);
 
             Console.WriteLine("User input cordianates :{0}, {1}", userInputCordinate.x, userInputCordinate.y);
             Console.WriteLine("Delta Allowed cordianates :{0}, {1}", rectangle.delta.x, rectangle.delta.y);
